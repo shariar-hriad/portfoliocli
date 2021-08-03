@@ -7,16 +7,69 @@
     height: 50vh;
 
     @include breakpoint-up(768px) {
-      height: 80vh;
+      height: 100vh;
     }
   }
   .section_content {
     padding-top: 20px;
+    position: relative;
+
+    @include breakpoint-up(768px) {
+      padding-top: 100px;
+    }
 
     .subTitle {
       color: #cdb30c;
       text-transform: uppercase;
-      font-weight: 600;
+      font-weight: 700;
+      font-family: "roboto";
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+
+    .secTitle {
+      color: rgba(0, 0, 0, 0.8);
+      text-transform: uppercase;
+      font-size: 34px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 29px;
+      color: #999;
+    }
+
+    .year_establish {
+      background: #cdb30c;
+      padding: 10px 20px;
+
+      .icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+
+        i {
+          color: #999;
+          font-size: 20px;
+        }
+      }
+
+      .year span {
+        color: #fff;
+        font-weight: 700;
+        font-size: 25px;
+      }
+
+      .experience span {
+        color: #fff;
+        font-weight: 700;
+        font-size: 18px;
+      }
     }
   }
 }

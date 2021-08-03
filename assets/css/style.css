@@ -202,7 +202,7 @@ h6 {
 
 .banner_area .slider_item {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -216,11 +216,18 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  padding-bottom: 60px;
   z-index: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .banner_area .slider_item {
+    height: 100vh;
+  }
+}
+
 .banner_area .banner_content {
-  margin-top: 195px;
+  margin-top: 250px;
   color: #fff;
 }
 
@@ -435,17 +442,78 @@ h6 {
 
 @media screen and (min-width: 768px) {
   .about_us .about_img {
-    height: 80vh;
+    height: 100vh;
   }
 }
 
 .about_us .section_content {
   padding-top: 20px;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .about_us .section_content {
+    padding-top: 100px;
+  }
 }
 
 .about_us .section_content .subTitle {
   color: #cdb30c;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
+  font-family: "roboto";
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.about_us .section_content .secTitle {
+  color: rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.about_us .section_content p {
+  line-height: 29px;
+  color: #999;
+}
+
+.about_us .section_content .year_establish {
+  background: #cdb30c;
+  padding: 10px 20px;
+}
+
+.about_us .section_content .year_establish .icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+}
+
+.about_us .section_content .year_establish .icon i {
+  color: #999;
+  font-size: 20px;
+}
+
+.about_us .section_content .year_establish .year span {
+  color: #fff;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.about_us .section_content .year_establish .experience span {
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
 }
 /*# sourceMappingURL=style.css.map */
