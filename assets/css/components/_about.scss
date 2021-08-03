@@ -1,0 +1,22 @@
+.about_us {
+  .about_img {
+    width: 100%;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    height: 50vh;
+
+    @include breakpoint-up(768px) {
+      height: 80vh;
+    }
+  }
+  .section_content {
+    padding-top: 20px;
+
+    .subTitle {
+      color: #cdb30c;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+  }
+}

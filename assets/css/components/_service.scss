@@ -1,0 +1,89 @@
+.service_area {
+  padding: 30px 0;
+  background: url(/assets/img/service.webp) repeat;
+  background-attachment: fixed;
+
+  .section_content {
+    color: #fff;
+    .secTitle {
+      font-size: 34px;
+      line-height: 40px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 29px;
+      color: #999;
+    }
+  }
+
+  .single_service {
+    margin: 10px 0;
+  }
+
+  .card {
+    padding: 30px;
+    background: #1a1a1a;
+    position: relative;
+    min-height: 200px;
+    border-radius: 5px;
+    transition: 0.3s;
+
+    .serv_icon {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 10px;
+
+      i {
+        color: #cdb30c;
+        font-size: 50px;
+      }
+    }
+
+    .serv_title {
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    a {
+      position: absolute;
+      bottom: -20px;
+      right: 60px;
+      opacity: 0;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #1a1a1a;
+      border: 1px solid #cdb30c;
+      transition: 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      i {
+        font-size: 20px;
+        color: #fff;
+      }
+    }
+  }
+
+  .single_service {
+    &:hover .card {
+      background: #cdb30c;
+    }
+    &:hover .serv_icon i {
+      color: #1a1a1a;
+    }
+    &:hover a {
+      opacity: 1;
+      right: 30px;
+    }
+  }
+
+  @include breakpoint-up(992px) {
+    padding: 70px 0;
+  }
+
+  @include breakpoint-up(1320px) {
+    padding: 100px 0;
+  }
+}
