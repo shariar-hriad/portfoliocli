@@ -19,13 +19,22 @@
   }
 
   .faq_accordion {
+    margin-top: 40px;
     .accordion-item {
       border: none;
+      margin: 10px 0;
     }
-
+    .accordion-button {
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+    .accordion-button:focus {
+      box-shadow: none;
+    }
     .accordion-button:not(.collapsed) {
       background: #cdb30c;
-      color: #000;
+      color: #fff;
     }
 
     .accordion-header {
@@ -37,6 +46,7 @@
 
     .accordion-body {
       padding: 16px 0;
+      background: #f4f5f9;
       li {
         margin-bottom: 10px;
         padding-left: 10px;

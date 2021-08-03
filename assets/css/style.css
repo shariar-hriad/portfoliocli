@@ -613,13 +613,29 @@ h6 {
   line-height: 45px;
 }
 
+.faq_skills .faq_accordion {
+  margin-top: 40px;
+}
+
 .faq_skills .faq_accordion .accordion-item {
   border: none;
+  margin: 10px 0;
+}
+
+.faq_skills .faq_accordion .accordion-button {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.faq_skills .faq_accordion .accordion-button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .faq_skills .faq_accordion .accordion-button:not(.collapsed) {
   background: #cdb30c;
-  color: #000;
+  color: #fff;
 }
 
 .faq_skills .faq_accordion .accordion-header {
@@ -631,6 +647,7 @@ h6 {
 
 .faq_skills .faq_accordion .accordion-body {
   padding: 16px 0;
+  background: #f4f5f9;
 }
 
 .faq_skills .faq_accordion .accordion-body li {
