@@ -447,7 +447,7 @@ h6 {
 }
 
 .about_us .section_content {
-  padding-top: 20px;
+  padding: 20px 0;
   position: relative;
 }
 
@@ -538,6 +538,48 @@ h6 {
 
 .projects_counter .overlay {
   opacity: 0.8 !important;
+}
+
+.projects_counter .counter_box {
+  margin: 10px 0;
+}
+
+.projects_counter .counter_box .icon {
+  width: 70px;
+  height: 70px;
+  background: #cdb30c;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 15px;
+}
+
+.projects_counter .counter_box .icon i {
+  color: #fff;
+  font-size: 48px;
+}
+
+.projects_counter .counter_box .counter_number strong,
+.projects_counter .counter_box .counter_number span {
+  color: #fff;
+  font-weight: 700;
+}
+
+.projects_counter .counter_box .counter_number strong {
+  font-size: 32px;
+}
+
+.projects_counter .counter_box .counter_number span {
+  color: rgba(255, 255, 255, 0.9);
+  text-transform: uppercase;
+  font-size: 16px;
 }
 
 @media screen and (min-width: 992px) {

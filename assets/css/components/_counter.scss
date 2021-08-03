@@ -10,6 +10,41 @@
     opacity: 0.8 !important;
   }
 
+  .counter_box {
+    margin: 10px 0;
+    .icon {
+      width: 70px;
+      height: 70px;
+      background: #cdb30c;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+
+      i {
+        color: #fff;
+        font-size: 48px;
+      }
+    }
+
+    .counter_number {
+      strong,
+      span {
+        color: #fff;
+        font-weight: 700;
+      }
+      strong {
+        font-size: 32px;
+      }
+      span {
+        color: rgba(255, 255, 255, 0.9);
+        text-transform: uppercase;
+        font-size: 16px;
+      }
+    }
+  }
+
   @include breakpoint-up(992px) {
     padding: 70px 0;
   }

@@ -1,6 +1,7 @@
 var $ = jQuery;
 jQuery(document).ready(function ($) {
   // Owl Carousel Banner Slider
+
   $(document).ready(function () {
     $(".banner_slider").owlCarousel({
       items: 1,
@@ -9,5 +10,12 @@ jQuery(document).ready(function ($) {
       autoplayHoverPause: true,
       loop: true,
     });
+  });
+
+  // Counter Js
+
+  $(".counter").counterUp({
+    delay: 10,
+    time: 1000,
   });
 });
