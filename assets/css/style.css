@@ -593,4 +593,67 @@ h6 {
     padding: 100px 0;
   }
 }
+
+.faq_skills {
+  background: #f4f5f9;
+  padding: 30px 0;
+}
+
+.faq_skills .faq_ques .subTitle {
+  color: #cdb30c;
+  font-family: "roboto";
+  font-weight: 500;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.faq_skills .faq_ques .secTitle {
+  font-size: 34px;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 45px;
+}
+
+.faq_skills .faq_accordion .accordion-item {
+  border: none;
+}
+
+.faq_skills .faq_accordion .accordion-button:not(.collapsed) {
+  background: #cdb30c;
+  color: #000;
+}
+
+.faq_skills .faq_accordion .accordion-header {
+  font-weight: 400;
+  color: #000;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.faq_skills .faq_accordion .accordion-body {
+  padding: 16px 0;
+}
+
+.faq_skills .faq_accordion .accordion-body li {
+  margin-bottom: 10px;
+  padding-left: 10px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.faq_skills .skilled_area .secTitle {
+  line-height: 45px;
+  font-size: 32px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (min-width: 992px) {
+  .faq_skills {
+    padding: 70px 0;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .faq_skills {
+    padding: 100px 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */
