@@ -1,0 +1,20 @@
+.projects_counter {
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  background-repeat: no-repeat !important;
+  padding: 30px 0;
+  position: relative;
+  z-index: 1;
+
+  .overlay {
+    opacity: 0.8 !important;
+  }
+
+  @include breakpoint-up(992px) {
+    padding: 70px 0;
+  }
+
+  @include breakpoint-up(1320px) {
+    padding: 100px 0;
+  }
+}

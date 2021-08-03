@@ -516,4 +516,39 @@ h6 {
   font-weight: 700;
   font-size: 18px;
 }
+
+@media screen and (min-width: 1140px) {
+  .about_us .section_content .year_establish {
+    padding: 30px;
+    width: 70%;
+    position: absolute;
+    left: -80px;
+    top: 400px;
+  }
+}
+
+.projects_counter {
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  background-repeat: no-repeat !important;
+  padding: 30px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.projects_counter .overlay {
+  opacity: 0.8 !important;
+}
+
+@media screen and (min-width: 992px) {
+  .projects_counter {
+    padding: 70px 0;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  .projects_counter {
+    padding: 100px 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */

@@ -70,6 +70,14 @@
         font-weight: 700;
         font-size: 18px;
       }
+
+      @include breakpoint-up(1140px) {
+        padding: 30px;
+        width: 70%;
+        position: absolute;
+        left: -80px;
+        top: 400px;
+      }
     }
   }
 }
