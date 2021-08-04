@@ -1,0 +1,47 @@
+.news_letter {
+  .news_content {
+    position: relative;
+    padding: 40px;
+    border-radius: 5px;
+    z-index: 0;
+
+    .overlay {
+      background: #cdb30c;
+      opacity: 0.8;
+      border-radius: 5px;
+    }
+
+    .secTitle {
+      color: #fff;
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 29px;
+    }
+  }
+  .input-group {
+    flex-wrap: unset;
+    input {
+      background: #fff;
+      border: 1px solid transparent;
+      color: rgba(0, 0, 0, 0.4);
+      font-size: 16px;
+      height: 50px;
+      border-radius: 5px 0 0 5px;
+      padding: 10px 20px;
+    }
+    input[type="submit"] {
+      color: #fff;
+      background: #9d8909;
+      border-radius: 0 5px 5px 0;
+      font-size: 16;
+    }
+    input[type="email"] {
+      width: 100%;
+      max-width: 350px;
+    }
+  }
+}
