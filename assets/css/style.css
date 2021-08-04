@@ -91,6 +91,43 @@ h6 {
   z-index: -1;
 }
 
+@media screen and (min-width: 992px) {
+  .px-6 {
+    padding: 0 60px;
+  }
+}
+
+.owl-carousel .owl-dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.owl-carousel .owl-dots .owl-dot.active {
+  background: #b3b3b3;
+}
+
+.owl-carousel .owl-dots .owl-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #cdb30c;
+  margin: 5px;
+  position: relative;
+}
+
+.owl-carousel .owl-dots .owl-dot::after {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: 0;
+  bottom: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  content: "";
+  border: 1px solid #cdb30c;
+}
+
 #header {
   position: absolute;
   top: 0;
@@ -189,10 +226,7 @@ h6 {
   z-index: 1;
 }
 
-.banner_area .owl-theme .owl-dots,
-.banner_area .owl-theme .owl-nav {
-  text-align: center;
-  -webkit-tap-highlight-color: transparent;
+.banner_area .banner_slider .owl-dots {
   position: absolute;
   bottom: 100px;
   left: 50%;
@@ -466,7 +500,7 @@ h6 {
 .about_us .section_content .subTitle {
   color: #cdb30c;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   font-family: "roboto";
   font-size: 13px;
   margin-bottom: 20px;
@@ -753,37 +787,6 @@ h6 {
   margin-top: 50px;
 }
 
-.team_area .team_slider .owl-dots {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.team_area .team_slider .owl-dots .owl-dot.active {
-  background: #b3b3b3;
-}
-
-.team_area .team_slider .owl-dots .owl-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #cdb30c;
-  margin: 5px;
-  position: relative;
-}
-
-.team_area .team_slider .owl-dots .owl-dot::after {
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: 0;
-  bottom: 0;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  content: "";
-  border: 1px solid #cdb30c;
-}
-
 .team_area .team_member {
   position: relative;
   overflow: hidden;
@@ -901,7 +904,9 @@ h6 {
 
 .recent_portfolio {
   position: relative;
+  background: #f4f5f9;
   padding: 30px 0;
+  z-index: 0;
 }
 
 .recent_portfolio .overlay {
@@ -923,7 +928,7 @@ h6 {
   font-size: 34px;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.8);
+  color: #fff;
 }
 
 .recent_portfolio .all_projects a {
@@ -947,6 +952,10 @@ h6 {
 
 .recent_portfolio .recent_projects {
   margin-top: 30px;
+}
+
+.recent_portfolio .single_project {
+  margin: 12px 0;
 }
 
 .recent_portfolio .single_project .project_banner {
@@ -1052,6 +1061,122 @@ h6 {
 
 @media screen and (min-width: 1340px) {
   .recent_portfolio {
+    padding: 100px 0;
+  }
+}
+
+.testimonial {
+  background: #f4f5f9;
+  position: relative;
+  z-index: 0;
+  padding: 30px 0;
+}
+
+.testimonial .section_content .subTitle {
+  color: #cdb30c;
+  font-weight: 500;
+  font-family: "roboto";
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.testimonial .section_content .secTitle {
+  font-size: 34px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.testimonial .testimonial_wrapper {
+  margin-top: 35px;
+}
+
+.testimonial .testimonial_slide {
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  padding: 20px;
+}
+
+.testimonial .testimonial_slide p {
+  color: #999;
+  line-height: 29px;
+  margin-bottom: 20px;
+}
+
+.testimonial .testimonial_slide .client img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  margin-right: 10px;
+}
+
+.testimonial .testimonial_slide .client p {
+  margin-bottom: 0;
+}
+
+.testimonial .testimonial_slide .client p i {
+  color: #cdb30c;
+  font-size: 12px;
+}
+
+.testimonial .testimonial_slide .client .name {
+  font-weight: 500;
+  font-size: 18px;
+  color: #232429;
+}
+
+.testimonial .testimonial_slide .client .designation {
+  color: #cdb30c;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+@media screen and (min-width: 992px) {
+  .testimonial {
+    padding: 70px 0;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .testimonial {
+    padding: 100px 0;
+  }
+}
+
+.our_blog {
+  padding: 30px 0;
+}
+
+.our_blog .section_content .subTitle {
+  color: #cdb30c;
+  font-weight: 500;
+  font-family: "roboto";
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.our_blog .section_content .secTitle {
+  font-size: 34px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (min-width: 992px) {
+  .our_blog {
+    padding: 70px 0;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .our_blog {
     padding: 100px 0;
   }
 }

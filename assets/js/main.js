@@ -34,7 +34,34 @@ jQuery(document).ready(function ($) {
         items: 3,
       },
       1000: {
+        items: 4,
+      },
+      1140: {
         items: 5,
+      },
+    },
+  });
+
+  // Team Carousel
+
+  $(".testimonial_slider").owlCarousel({
+    loop: true,
+    responsiveClass: true,
+    autoplay: true,
+    margin: 10,
+    responsive: {
+      0: {
+        items: 1,
+        dots: false,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 3,
+      },
+      1140: {
+        items: 4,
       },
     },
   });

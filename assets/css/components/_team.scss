@@ -41,37 +41,6 @@
 
   .team_slider {
     margin-top: 50px;
-
-    .owl-dots {
-      text-align: center;
-      margin-top: 10px;
-
-      .owl-dot.active {
-        background: #b3b3b3;
-      }
-
-      .owl-dot {
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background: #cdb30c;
-        margin: 5px;
-        position: relative;
-
-        &::after {
-          position: absolute;
-          top: -2px;
-          left: -2px;
-          right: 0;
-          bottom: 0;
-          width: 14px;
-          height: 14px;
-          border-radius: 50%;
-          content: "";
-          border: 1px solid #cdb30c;
-        }
-      }
-    }
   }
 
   .team_member {

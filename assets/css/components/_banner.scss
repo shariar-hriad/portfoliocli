@@ -2,14 +2,13 @@
   position: relative;
   z-index: 1;
 
-  .owl-theme .owl-dots,
-  .owl-theme .owl-nav {
-    text-align: center;
-    -webkit-tap-highlight-color: transparent;
-    position: absolute;
-    bottom: 100px;
-    left: 50%;
-    transform: translateX(-50%);
+  .banner_slider {
+    .owl-dots {
+      position: absolute;
+      bottom: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
   .slider_item {
