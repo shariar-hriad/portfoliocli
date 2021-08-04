@@ -1,0 +1,123 @@
+.recent_portfolio {
+  position: relative;
+  padding: 30px 0;
+
+  .overlay {
+    opacity: 1;
+    bottom: unset;
+    height: 40%;
+  }
+
+  .section_content {
+    .subTitle {
+      color: #cdb30c;
+      font-weight: 500;
+      font-family: "roboto";
+      font-size: 13px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .secTitle {
+      font-size: 34px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: rgba(0, 0, 0, 0.8);
+    }
+  }
+
+  .all_projects {
+    a {
+      color: #cdb30c;
+      text-transform: uppercase;
+      font-weight: 500;
+      padding: 3px 10px;
+      border: 2px solid #cdb30c;
+      font-size: 12px;
+
+      i {
+        color: #cdb30c;
+        font-size: 12px;
+        padding-left: 5px;
+      }
+      &:hover {
+        border-color: rgba(0, 0, 0, 0.8);
+      }
+    }
+  }
+
+  .recent_projects {
+    margin-top: 30px;
+  }
+
+  .single_project {
+    .project_banner {
+      height: 340px;
+      border-radius: 4px;
+      position: relative;
+      overflow: hidden;
+      z-index: 0;
+      background-size: cover !important;
+      background-repeat: no-repeat !important;
+      background-position: center center !important;
+
+      &::before,
+      &::after {
+        position: absolute;
+        z-index: 1;
+        content: "";
+        background: #232429;
+        width: 100%;
+        height: 50%;
+        left: 0;
+        right: 0;
+        transition: all 0.36s ease;
+        opacity: 0;
+      }
+
+      &::before {
+        top: -50%;
+      }
+
+      &::after {
+        bottom: -50%;
+      }
+
+      .project_details {
+        position: absolute;
+        left: 15px;
+        bottom: 30px;
+        z-index: 2;
+
+        .title {
+          color: #cdb30c;
+          font-size: 12px;
+          text-transform: uppercase;
+          font-weight: 500;
+        }
+      }
+    }
+
+    &:hover .project_banner::before {
+      top: 0;
+      opacity: 0.9;
+    }
+
+    &:hover .project_banner::after {
+      bottom: 0;
+      opacity: 0.9;
+    }
+
+    &:hover .project_details {
+      opacity: 1;
+    }
+  }
+
+  @include breakpoint-up(992px) {
+    padding: 70px 0;
+  }
+
+  @include breakpoint-up(1340px) {
+    padding: 100px 0;
+  }
+}

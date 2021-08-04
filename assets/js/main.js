@@ -23,7 +23,6 @@ jQuery(document).ready(function ($) {
 
   $(".team_slider").owlCarousel({
     loop: true,
-    margin: 10,
     responsiveClass: true,
     autoplay: true,
     responsive: {

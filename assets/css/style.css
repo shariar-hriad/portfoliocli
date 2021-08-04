@@ -730,7 +730,7 @@ h6 {
   color: rgba(0, 0, 0, 0.8);
 }
 
-.team_area .all_mebers a {
+.team_area .all_members a {
   color: #cdb30c;
   text-transform: uppercase;
   font-weight: 500;
@@ -739,26 +739,49 @@ h6 {
   font-size: 12px;
 }
 
-.team_area .all_mebers a i {
+.team_area .all_members a i {
   color: #cdb30c;
   font-size: 12px;
   padding-left: 5px;
 }
 
-.team_area .all_mebers a:hover {
+.team_area .all_members a:hover {
   border-color: rgba(0, 0, 0, 0.8);
+}
+
+.team_area .team_slider {
+  margin-top: 50px;
 }
 
 .team_area .team_slider .owl-dots {
   text-align: center;
+  margin-top: 10px;
+}
+
+.team_area .team_slider .owl-dots .owl-dot.active {
+  background: #b3b3b3;
 }
 
 .team_area .team_slider .owl-dots .owl-dot {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background: #cdb30c;
-  margin: 20px;
+  margin: 5px;
+  position: relative;
+}
+
+.team_area .team_slider .owl-dots .owl-dot::after {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: 0;
+  bottom: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  content: "";
+  border: 1px solid #cdb30c;
 }
 
 .team_area .team_member {
@@ -872,6 +895,129 @@ h6 {
 
 @media screen and (min-width: 1340px) {
   .team_area {
+    padding: 100px 0;
+  }
+}
+
+.recent_portfolio {
+  position: relative;
+  padding: 30px 0;
+}
+
+.recent_portfolio .overlay {
+  opacity: 1;
+  bottom: unset;
+  height: 40%;
+}
+
+.recent_portfolio .section_content .subTitle {
+  color: #cdb30c;
+  font-weight: 500;
+  font-family: "roboto";
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.recent_portfolio .section_content .secTitle {
+  font-size: 34px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.recent_portfolio .all_projects a {
+  color: #cdb30c;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 3px 10px;
+  border: 2px solid #cdb30c;
+  font-size: 12px;
+}
+
+.recent_portfolio .all_projects a i {
+  color: #cdb30c;
+  font-size: 12px;
+  padding-left: 5px;
+}
+
+.recent_portfolio .all_projects a:hover {
+  border-color: rgba(0, 0, 0, 0.8);
+}
+
+.recent_portfolio .recent_projects {
+  margin-top: 30px;
+}
+
+.recent_portfolio .single_project .project_banner {
+  height: 340px;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+}
+
+.recent_portfolio .single_project .project_banner::before, .recent_portfolio .single_project .project_banner::after {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  background: #232429;
+  width: 100%;
+  height: 50%;
+  left: 0;
+  right: 0;
+  -webkit-transition: all 0.36s ease;
+  transition: all 0.36s ease;
+  opacity: 0;
+}
+
+.recent_portfolio .single_project .project_banner::before {
+  top: -50%;
+}
+
+.recent_portfolio .single_project .project_banner::after {
+  bottom: -50%;
+}
+
+.recent_portfolio .single_project .project_banner .project_details {
+  position: absolute;
+  left: 15px;
+  bottom: 30px;
+  z-index: 2;
+}
+
+.recent_portfolio .single_project .project_banner .project_details .title {
+  color: #cdb30c;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.recent_portfolio .single_project:hover .project_banner::before {
+  top: 0;
+  opacity: 0.9;
+}
+
+.recent_portfolio .single_project:hover .project_banner::after {
+  bottom: 0;
+  opacity: 0.9;
+}
+
+.recent_portfolio .single_project:hover .project_details {
+  opacity: 1;
+}
+
+@media screen and (min-width: 992px) {
+  .recent_portfolio {
+    padding: 70px 0;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .recent_portfolio {
     padding: 100px 0;
   }
 }
