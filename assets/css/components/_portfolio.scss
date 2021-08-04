@@ -56,7 +56,7 @@
       border-radius: 4px;
       position: relative;
       overflow: hidden;
-      z-index: 0;
+      z-index: 1;
       background-size: cover !important;
       background-repeat: no-repeat !important;
       background-position: center center !important;
@@ -64,14 +64,14 @@
       &::before,
       &::after {
         position: absolute;
-        z-index: 1;
+        z-index: -1;
         content: "";
         background: #232429;
         width: 100%;
         height: 50%;
         left: 0;
         right: 0;
-        transition: all 0.36s ease;
+        transition: all 0.6s ease;
         opacity: 0;
       }
 
@@ -84,16 +84,43 @@
       }
 
       .project_details {
-        position: absolute;
-        left: 15px;
-        bottom: 30px;
-        z-index: 2;
+        padding: 30px;
+        transition: 0.6s;
+        opacity: 0;
 
         .title {
           color: #cdb30c;
           font-size: 12px;
           text-transform: uppercase;
           font-weight: 500;
+          font-family: "roboto";
+        }
+
+        h2 a {
+          font-family: "roboto-con";
+          font-weight: 700;
+          color: #fff;
+          text-transform: uppercase;
+          font-size: 18px;
+          letter-spacing: 3px;
+        }
+
+        .view_details {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background: #cdb30c;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          z-index: 1;
+          bottom: 32px;
+          right: 20px;
+
+          i {
+            color: #fff;
+          }
         }
       }
     }
