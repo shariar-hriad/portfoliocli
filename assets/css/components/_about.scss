@@ -18,6 +18,10 @@
       padding-top: 100px;
     }
 
+    @include breakpoint-up(992px) {
+      padding-left: 50px;
+    }
+
     .subTitle {
       color: #cdb30c;
       text-transform: uppercase;
@@ -72,11 +76,11 @@
       }
 
       @include breakpoint-up(1140px) {
-        padding: 30px;
+        padding: 20px;
         width: 70%;
         position: absolute;
-        left: -80px;
-        top: 400px;
+        left: -90px;
+        top: 430px;
       }
     }
   }

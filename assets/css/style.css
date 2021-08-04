@@ -457,6 +457,12 @@ h6 {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .about_us .section_content {
+    padding-left: 50px;
+  }
+}
+
 .about_us .section_content .subTitle {
   color: #cdb30c;
   text-transform: uppercase;
@@ -519,11 +525,11 @@ h6 {
 
 @media screen and (min-width: 1140px) {
   .about_us .section_content .year_establish {
-    padding: 30px;
+    padding: 20px;
     width: 70%;
     position: absolute;
-    left: -80px;
-    top: 400px;
+    left: -90px;
+    top: 430px;
   }
 }
 
@@ -614,7 +620,7 @@ h6 {
 }
 
 .faq_skills .faq_accordion {
-  margin-top: 40px;
+  margin: 40px 0 20px;
 }
 
 .faq_skills .faq_accordion .accordion-item {
@@ -663,7 +669,7 @@ h6 {
 }
 
 .faq_skills .skilled_area .skil_bar {
-  margin-top: 30px;
+  margin: 30px 0;
   position: relative;
 }
 
@@ -700,6 +706,172 @@ h6 {
 
 @media screen and (min-width: 1340px) {
   .faq_skills {
+    padding: 100px 0;
+  }
+}
+
+.team_area {
+  padding: 30px 0;
+}
+
+.team_area .section_content .subTitle {
+  color: #cdb30c;
+  font-weight: 500;
+  font-family: "roboto";
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.team_area .section_content .secTitle {
+  font-size: 34px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.team_area .all_mebers a {
+  color: #cdb30c;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 3px 10px;
+  border: 2px solid #cdb30c;
+  font-size: 12px;
+}
+
+.team_area .all_mebers a i {
+  color: #cdb30c;
+  font-size: 12px;
+  padding-left: 5px;
+}
+
+.team_area .all_mebers a:hover {
+  border-color: rgba(0, 0, 0, 0.8);
+}
+
+.team_area .team_slider .owl-dots {
+  text-align: center;
+}
+
+.team_area .team_slider .owl-dots .owl-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #cdb30c;
+  margin: 20px;
+}
+
+.team_area .team_member {
+  position: relative;
+  overflow: hidden;
+}
+
+.team_area .team_member .team_img {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  height: 350px;
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 0;
+}
+
+.team_area .team_member .team_img::before, .team_area .team_member .team_img::after {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  background: #cdb30c;
+  width: 100%;
+  height: 50%;
+  left: 0;
+  right: 0;
+  -webkit-transition: all 0.36s ease;
+  transition: all 0.36s ease;
+  opacity: 0;
+}
+
+.team_area .team_member .team_img::before {
+  top: -50%;
+}
+
+.team_area .team_member .team_img::after {
+  bottom: -50%;
+}
+
+.team_area .team_member .team_details {
+  text-align: center;
+  opacity: 0;
+  position: relative;
+  -webkit-transition: opacity 0.6s ease;
+  transition: opacity 0.6s ease;
+  z-index: 2;
+}
+
+.team_area .team_member .team_details .title {
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.team_area .team_member .team_details .designation {
+  color: #fff;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.team_area .team_member .team_details .social_link ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.team_area .team_member .team_details .social_link ul li {
+  padding: 0 15px;
+}
+
+.team_area .team_member .team_details .social_link ul a {
+  color: #fff;
+}
+
+.team_area .team_member:hover .team_img::before {
+  top: 0;
+  opacity: 0.6;
+}
+
+.team_area .team_member:hover .team_img::after {
+  bottom: 0;
+  opacity: 0.6;
+}
+
+.team_area .team_member:hover .team_details {
+  opacity: 1;
+}
+
+@media screen and (min-width: 992px) {
+  .team_area {
+    padding: 70px 0;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .team_area {
     padding: 100px 0;
   }
 }
