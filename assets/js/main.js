@@ -29,6 +29,7 @@ jQuery(document).ready(function ($) {
     responsive: {
       0: {
         items: 1,
+        dots: false,
       },
       600: {
         items: 3,
