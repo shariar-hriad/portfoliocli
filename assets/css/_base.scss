@@ -124,6 +124,12 @@ h6 {
   z-index: -1;
 }
 
+.img {
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center center !important;
+}
+
 @include breakpoint-up(992px) {
   .px-6 {
     padding: 0 60px;
