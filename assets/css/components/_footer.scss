@@ -1,0 +1,121 @@
+.footer_area {
+  padding-top: 100px;
+  background: #232429;
+  position: relative;
+  z-index: 0;
+
+  .footer_widget {
+    margin: 10px 0;
+    .footer_logo {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+
+      &:hover {
+        color: #cdb30c;
+      }
+    }
+
+    p {
+      line-height: 29px;
+      color: rgba(255, 255, 225, 0.9);
+
+      i {
+        color: #cdb30c;
+        padding-right: 5px;
+      }
+    }
+
+    .f_social_list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+
+      li:not(:first-child) {
+        padding-left: 15px;
+      }
+
+      li {
+        a {
+          width: 40px;
+          height: 40px;
+          background: #cdb30c;
+          border-radius: 50%;
+          color: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          i {
+            color: #fff;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    .widget_title {
+      color: #fff;
+      font-size: 20px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      letter-spacing: normal;
+    }
+
+    .footer_menu {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        padding: 5px 0;
+      }
+
+      a {
+        color: rgba(255, 255, 255, 0.7);
+        text-transform: capitalize;
+        font-weight: 500;
+        i {
+          padding-right: 5px;
+        }
+        &:hover {
+          color: #cdb30c;
+        }
+      }
+    }
+    a {
+      color: rgba(255, 255, 255, 0.8);
+
+      i {
+        color: #cdb30c;
+        margin-right: 7px;
+      }
+    }
+  }
+
+  @include breakpoint-up(768px) {
+    padding-top: 150px;
+  }
+
+  .copy_rights {
+    background: #1e1f23;
+    padding: 30px 0;
+    .copyrights {
+      p {
+        color: rgba(255, 255, 225, 0.9);
+        margin: 0;
+        a {
+          font-family: "roboto-con";
+          font-weight: 400;
+          font-size: 20px;
+          letter-spacing: 5px;
+          margin-left: 10px;
+          color: #cdb30c;
+        }
+      }
+    }
+  }
+}

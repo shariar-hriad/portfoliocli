@@ -1,7 +1,10 @@
 .news_letter {
+  position: relative;
+  z-index: 99;
+  margin-bottom: -80px;
   .news_content {
     position: relative;
-    padding: 40px;
+    padding: 5px;
     border-radius: 5px;
     z-index: 0;
 
@@ -20,6 +23,10 @@
     p {
       color: rgba(255, 255, 255, 0.8);
       line-height: 29px;
+    }
+
+    @include breakpoint-up(768px) {
+      padding: 40px;
     }
   }
   .input-group {
