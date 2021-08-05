@@ -65,4 +65,6 @@ jQuery(document).ready(function ($) {
       },
     },
   });
+  // WoW js
+  new WOW().init();
 });

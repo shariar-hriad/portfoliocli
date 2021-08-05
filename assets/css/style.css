@@ -573,7 +573,7 @@ h6 {
   font-size: 20px;
 }
 
-.about_us .section_content .year_establish .year span {
+.about_us .section_content .year_establish .year strong {
   color: #fff;
   font-weight: 700;
   font-size: 25px;
