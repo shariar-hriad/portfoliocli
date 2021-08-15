@@ -15,7 +15,7 @@
   <body>
     <div class="riad_wrapper">
       <!-- Header Section start -->
-      <header id="header">
+      <header id="header" class="header-fixed">
         <!-- Header Top -->
         <div class="header_top">
           <div class="container">
@@ -87,21 +87,33 @@
             >
               <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
                     >Home</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="#service">Service</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
+                  <a class="nav-link" href="#about_us">About Us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Blog</a>
+                  <a class="nav-link" href="#faq_skills">Faq</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="#team_area">Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#testimonial">Testimonial</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#our_blog">Blog</a>
                 </li>
               </ul>
             </div>
@@ -181,6 +193,7 @@
       <!-- Services Section Start -->
       <section
         class="service_area"
+        id="service"
         style="background: url(assets/img/service.webp)"
       >
         <div class="container">
@@ -312,7 +325,7 @@
       <!-- Services Section End -->
 
       <!-- About Us Section Start -->
-      <section class="about_us">
+      <section class="about_us" id="about_us">
         <div class="container">
           <div class="row d-flex">
             <div
@@ -423,7 +436,7 @@
       <!-- Counter Section End -->
 
       <!-- Faq And Skills Section Start -->
-      <section class="faq_skills">
+      <section class="faq_skills" id="faq_skills">
         <div class="container">
           <div class="row">
             <!-- Skill Bar -->
@@ -690,7 +703,7 @@
       <!-- Faq And Skills Section End -->
 
       <!-- Team Section Start -->
-      <section class="team_area">
+      <section class="team_area" id="team_area">
         <div class="container">
           <div class="row align-items-center">
             <div
@@ -885,7 +898,7 @@
       <!-- Team Section End -->
 
       <!-- Recent Portfolio Section Start -->
-      <section class="recent_portfolio">
+      <section class="recent_portfolio" id="portfolio">
         <div class="overlay"></div>
         <div class="container">
           <div class="row align-items-center">
@@ -1030,7 +1043,7 @@
       <!-- Recent Portfolio Section End -->
 
       <!-- Testimonial Section Start -->
-      <section class="testimonial">
+      <section class="testimonial" id="testimonial">
         <div class="container">
           <div class="row align-items-center">
             <div
@@ -1171,7 +1184,7 @@
       <!-- Testimonial Section End -->
 
       <!-- Our Blog Section Start -->
-      <section class="our_blog">
+      <section class="our_blog" id="our_blog">
         <div class="container">
           <div class="row">
             <div
@@ -1300,7 +1313,7 @@
       <!-- News Letter Section End -->
 
       <!-- Footer Section Start -->
-      <footer class="footer_area">
+      <footer class="footer_area" id="footer">
         <div class="container">
           <div class="row pb-6 wow animate__zoomIn" data-wow-duration="2s">
             <div class="col-sm-12 col-md">
@@ -1434,6 +1447,8 @@
       <script src="assets/js/owl.carousel.min.js"></script>
       <!-- Wow Js -->
       <script src="assets/js/wow.min.js"></script>
+      <!-- Smooth Scrool  -->
+      <script src="assets/js/smooth-scroll.polyfills.min.js"></script>
       <script src="assets/js/bootstrap.bundle.js"></script>
       <script src="assets/js/main.js"></script>
     </div>

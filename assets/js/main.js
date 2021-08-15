@@ -1,5 +1,20 @@
 var $ = jQuery;
 jQuery(document).ready(function ($) {
+  // Smooth Scrool
+
+  $(".navbar-nav a").on("click", function (e) {
+    if (this.hash !== "") {
+      e.preventDefault();
+      const hash = this.hash;
+      $("html,body").animate(
+        {
+          scrollTop: $(hash).offset().top,
+        },
+        800
+      );
+    }
+  });
+
   // Owl Carousel Banner Slider
 
   $(document).ready(function () {
@@ -65,6 +80,20 @@ jQuery(document).ready(function ($) {
       },
     },
   });
+
   // WoW js
+
   new WOW().init();
+
+  // Sticky Menu
+
+  jQuery(window).load(function () {
+    $(window).on("scroll", function () {
+      if ($(this).scrollTop() > 20) {
+        $("#header").addClass("sticky");
+      } else {
+        $("#header").removeClass("sticky");
+      }
+    });
+  });
 });
