@@ -8,7 +8,7 @@ jQuery(document).ready(function ($) {
       const hash = this.hash;
       $("html,body").animate(
         {
-          scrollTop: $(hash).offset().top,
+          scrollTop: $(hash).offset().top
         },
         800
       );
@@ -23,7 +23,7 @@ jQuery(document).ready(function ($) {
       autoplay: true,
       autoplayTimeout: 5000,
       autoplayHoverPause: true,
-      loop: true,
+      loop: true
     });
   });
 
@@ -31,7 +31,7 @@ jQuery(document).ready(function ($) {
 
   $(".counter").counterUp({
     delay: 10,
-    time: 1000,
+    time: 1000
   });
 
   // Team Carousel
@@ -43,18 +43,18 @@ jQuery(document).ready(function ($) {
     responsive: {
       0: {
         items: 1,
-        dots: false,
+        dots: false
       },
       600: {
-        items: 3,
+        items: 3
       },
       1000: {
-        items: 4,
+        items: 4
       },
       1140: {
-        items: 5,
-      },
-    },
+        items: 5
+      }
+    }
   });
 
   // Team Carousel
@@ -67,18 +67,18 @@ jQuery(document).ready(function ($) {
     responsive: {
       0: {
         items: 1,
-        dots: false,
+        dots: false
       },
       600: {
-        items: 3,
+        items: 3
       },
       1000: {
-        items: 3,
+        items: 3
       },
       1140: {
-        items: 4,
-      },
-    },
+        items: 4
+      }
+    }
   });
 
   // WoW js
@@ -87,13 +87,9 @@ jQuery(document).ready(function ($) {
 
   // Sticky Menu
 
-  jQuery(window).load(function () {
-    $(window).on("scroll", function () {
-      if ($(this).scrollTop() > 20) {
-        $("#header").addClass("sticky");
-      } else {
-        $("#header").removeClass("sticky");
-      }
-    });
+  window.addEventListener("scroll", function () {
+    let header = document.querySelector("#header");
+    let topBar = document.querySelector(".header_top");
+    header.classList.toggle("header-fixed", window.scrollY > 0);
   });
 });

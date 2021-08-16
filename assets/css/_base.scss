@@ -189,15 +189,10 @@ h6 {
   }
 }
 
-.sticky {
-  background-color: #fff;
+.header-fixed {
+  background-color: black;
   box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.05);
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  padding: 5px 0;
-  position: fixed;
-  z-index: 999;
-  width: 100%;
-  left: 0;
-  top: 0;
+  position: fixed !important;
 }
